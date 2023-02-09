@@ -1,0 +1,8 @@
+name: dReps
+version: 1.1
+author: Delgadoo
+main: br.com.delgadoo.dreps.dReps
+website: https://github.com/JoaoDelgadoo/dReps
+commands:
+  rep:
+    aliases: [reps, reputation]

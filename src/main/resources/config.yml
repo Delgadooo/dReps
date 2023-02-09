@@ -1,0 +1,51 @@
+Database:
+  mysql: false
+  host: ''
+  port: 3306
+  database: ''
+  user: ''
+  password: ''
+
+Config:
+  permissão: 'dreps.use'
+  cooldown-tempo: 60 #MINUTOS
+  tempo-top: 5 #MINUTOS * Tempo que o comando /rep top é atualizado, recomendo não mexer | Utilizado pra não ter risco de perder conexão com o banco de dados
+
+Mensagens:
+  sem-permissão: '&cVocê não possui permissão para utilizar este comando.'
+  comando-params:
+    - ''
+    - ' &6&lCOMANDOS - REPUTAÇÃO'
+    - ''
+    - '  &f/rep ver <jogador> &7- Visualizar a reputação de um jogador.'
+    - '  &f/rep + <jogador> &7- Enviar um ponto positivo para um jogador.'
+    - '  &f/rep - <jogador> &7- Enviar um ponto negativo para um jogador.'
+    - '  &f/rep top &7- Visualizar o TOP 10 jogadores com pontuação positiva.'
+    - ''
+  jogador-não-encontrado: '&cEste jogador não está cadastrado no banco de dados.'
+  erro-ponto-positivo: '&c&lEPA! &cVocê não pode enviar um ponto positivo a si mesmo.'
+  erro-ponto-negativo: '&c&lEPA! &cVocê não pode enviar um ponto negativo a si mesmo.'
+  ponto-positivo-enviado: '&aVocê enviou um ponto positivo ao jogador &7%jogador%&a.'
+  ponto-negativo-enviado: '&eVocê enviou um ponto negativo ao jogador &7%jogador%&e.'
+  cooldown-msg: '&cVocê precisa aguardar %tempo% para enviar outro ponto.'
+  ponto-positivo-recebido: '&a&lYAY! &aVocê recebeu um ponto positivo do jogador %jogador%.'
+  ponto-negativo-recebido: '&c&lEITA! &eVocê recebeu um ponto negativo do jogador %jogador%.'
+  ver-pontos:
+    - ''
+    - ' &6&lPONTOS DE %jogador%'
+    - ''
+    - '  &b* &fPositivos: &a%pontos-positivos%'
+    - '  &b* &fNegativos: &c%pontos-negativos%'
+    - ''
+  msg-top:
+    - ''
+    - ' &b&lTOP REPUTAÇÃO'
+    - ''
+    - ' &7* Você está visualizando os TOP 10 jogadores'
+    - ' &7* com maior reputação &8positiva&7.'
+    - ''
+    - '%top10%'
+    - ''
+
+Top-config:
+  msg: ' &7 %rank%º » &6%jogador%: &b%pontos-positivos%'
